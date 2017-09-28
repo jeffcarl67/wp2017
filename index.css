@@ -9,7 +9,7 @@
 body{
 	overflow: scroll;
 	background-image: url("background-1366924_640.jpg");
-    background-size: cover;
+    //background-size: cover;
     //background-repeat: no-repeat;
 }
 
