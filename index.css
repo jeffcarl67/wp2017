@@ -8,7 +8,9 @@
 
 body{
 	overflow: scroll;
-	background-image: url("background-1366924_1920.jpg");
+	background-image: url("background-1366924_640.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -90,7 +92,7 @@ img{
 }
 
 #down2_left2{
-	background-image: url("close-up-2178341_1280.jpg");
+	background-image: url("close-up-2178341_640.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;	
@@ -155,7 +157,7 @@ img{
 }
 
 .inner {
-	background-image: url("3479.jpg");
+	background-image: url("34793.jpg");
 	background-size: cover;
 	background-position: center center;
 	height:100%;
