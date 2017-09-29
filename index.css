@@ -8,7 +8,7 @@
 
 body{
 	overflow: scroll;
-	background-image: url("background-1366924_640.jpg");
+	//background-image: url("background-1366924_640.jpg");
     //background-size: cover;
     //background-repeat: no-repeat;
 }
@@ -50,13 +50,6 @@ img{
 	color: white;
 }
 
-.down1{
-	position: absolute;
-	width: 90%;
-	height: 90%;
-	display: none;
-}
-
 .down2{
 	width:45%;
 	height:90%;
@@ -96,6 +89,10 @@ img{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;	
+}
+
+#down2_right1{
+    background-color:black;
 }
 
 .more > div{
