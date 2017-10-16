@@ -2,15 +2,12 @@
 	margin: auto;
 	font-family: "微軟正黑體";
 	font-size: 30px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	//margin-top: 5px;
+	//margin-bottom: 5px;
 }
 
 body{
 	overflow: scroll;
-	//background-image: url("background-1366924_640.jpg");
-    //background-size: cover;
-    //background-repeat: no-repeat;
 }
 
 h1{
@@ -22,127 +19,52 @@ p{
 	text-align: center;
 }
 
-img{
-	height: 80%;
-}
-
 #container{
 	width:1500px;
-	height: 900px;
-	animation-duration: 3s;
-  	animation-name: slidein;
+	//height: 900px;
 }
 
 #up{
 	width:90%;
-	height:45%;
+	height:500px;
 	overflow: visible;
 }
 
 #down{
 	width:90%;
-	height:45%;
+	height:400px;
+}
+
+#down > div{
+	float: left;
+	width:400px;
+	height: 80%;
+	margin:0px 1.666666666% 0px 1.666666666%;
+}
+/*
+#down > div > p{
+	border-radius: 20px;
+	border:1px solid black;
+	bottom: 0px;
+	background-color: black;
+	color: white;
+}
+*/
+#down > div > img{
+	width:100%;
+	margin:0px;
+	border-radius: 20px;
+}
+
+#down > div > p{
+	margin:0px;
 }
 
 #bot{
 	clear: both;
 	text-align: center;
-	color: white;
 }
 
-.down2{
-	width:45%;
-	height:90%;
-	float: left;
-	margin:2% 2% 2% 2%;
-	border-radius: 10%;
-	overflow:hidden;
-}
-
-.down2 > div{
-	width:200%;
-	height:100%;
-	background-color: transparent;
-	margin:0px 0px 0px 0px;
-	transition: margin-left 0.5s ease-out;
-}
-.down2 > div:hover{
-	margin-left: -100%;
-}
-
-.down2 >div >div{
-	width:50%;
-	height:100%;
-	float:left;
-	margin:0px 0px 0px 0px;
-}
-
-#down2_left1{
-	background-image: url("IMG_0132m.JPG");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-#down2_left2{
-	background-image: url("close-up-2178341_640.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;	
-}
-
-#down2_right1{
-    background-color:black;
-}
-
-.more > div{
-	width:200px;
-	border:2px solid black;
-	text-align: center;
-	border-radius: 20px;
-}
-
-.more > div:hover{
-	overflow: visible;
-}
-
-.more > div > div{
-	display: none;
-}
-
-.more > div:active > div{
-	display: block;
-	position: fixed;
-	right:0%;
-	bottom:0%;
-	width:100%;
-	height:100%;
-	transition: all 2s;
-	-webkit-transition: all 2s;
-	-moz-transition: all 2s;
-	-o-transition: all 2s;
-	-ms-transition: all 2s;
-	background-color: transparent;
-	border-radius: 20px;
-	overflow: hidden;
-}
-
-.more > div > div:hover{
-	display: block;
-	position: fixed;
-	right:0%;
-	bottom:0%;
-	width:100%;
-	height:100%;
-	transition: all 2s;
-	-webkit-transition: all 2s;
-	-moz-transition: all 2s;
-	-o-transition: all 2s;
-	-ms-transition: all 2s;
-	background-color: white;
-	height:50%;
-
-}
 
 .pic{
 	border: none;
@@ -174,41 +96,51 @@ img{
   to   { transform: translate3d(0, 100px, 0); }
 }
 
-#down2_left1 > p{
-	width:150px;
+body > img{
+	width:100%;
+}
+
+img{
+	width:100%;
+	margin:0px;
+}
+
+.button_back{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:128px;
+	height:128px;
 	background-color: white;
 }
 
-#down2_left2 > p{
-	width:150px;
-	background-color: white;
+.bar{
+	position:absolute;
+	top:0px;
+	left:128px;
+	width:100vw;
+	height:128px;
+	background-color: gray;
 }
 
-#down2_right1 > p{
-	color: white;
+.title{
+	font-size: 100px;
 }
 
-#down2_right1 > h1{
-	color: white;
+.intro_img{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:100vw;
+	border-radius: 20px;
+	z-index: 1;
 }
 
-#down2_right1 > div{
-	color:white;
-	border:2px solid white;
-}
-
-#down2_right1 > div > div > p{
-	color:black;
-}
-
-@keyframes slidein {
-  from {
-    padding-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    padding-left: 0%;
-    width: 100%;
-  }
+.content{
+	position:absolute;
+	top:150px;
+	left:50vw;
+	width:50vw;
+	font-size:30px;
+	text-align: center;
 }
