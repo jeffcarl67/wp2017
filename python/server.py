@@ -52,6 +52,10 @@ def chat():
         chat_file.close()
     return escape(content)
 
+#@app.route('/user/<name>')
+#def user(name):
+#    return render_template('user.html', name=name)
+
 @app.route('/chat_content')
 def chat_content():
     content = ''
@@ -62,5 +66,9 @@ def chat_content():
         chat_file.close()
     return escape(content)
 
+@app.route('/re')
+def re():
+    return redirect("http://www.google.com")
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=12215,debug=False,threaded=True)
+    app.run(host='0.0.0.0',port=12215,debug=True,threaded=True)
